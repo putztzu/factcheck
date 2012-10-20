@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width" />
+		<title>Pants on Fire Fact Check</title>
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<!-- <link rel="stylesheet" href="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.css" /> -->
+		<link rel="stylesheet" href="assets/css/app.css" /> 
+		
+		
+		
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>	
+		<!--	
+		<script src="assets/js/jquery.mobile/jquery-1.6.4.min"></script>
+		<script src="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+		-->
+
+		<script type="text/javascript" charset="utf-8" src="assets/js/app.js"></script>
+	</head>
+	
+	<body onload="init();">
+	<div data-role="page" id="page-home" class="type-interior" data-theme="d">
+	      <div data-role="header" data-theme="d" data-position="fixed" data-id="foo">
+		      <h1>Pants on Fire Fact Check</h1>
+		      
+		      
+				<div data-role="navbar" class="nav-glyphish-example" data-theme="d">
+					<ul>
+						<li><a href="index.html" data-transition="none" data-prefetch="true" data-theme="d" id="chat" data-icon="custom" class="ui-btn-active ui-state-persist">Home</a></li>
+						<li><a href="Obama.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Obama</a></li>
+						<li><a href="Romney.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Romney</a></li>
+						<li><a href="Terms.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Terms/Conditions</a></li>
+						
+					</ul>
+				</div>
+
+
+				<div data-role="navbar" class="nav-glyphish-example" data-theme="d">
+					<ul>
+						<li><a href="Politifacts.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Politifacts</a></li>
+						<li><a href="Factcheck.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Factcheck</a></li>
+						<li><a href="theMRC.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Media Rsrch Ctr</a></li>
+					</ul>
+				</div>
+		  	</div>
+	      </div>
+	</div>
+
+	<div data-role="content" >	
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('politifacts').start();
+		</script>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-id="footer1" data-position="fixed">
+	      <a href="about.html" data-transition="none" data-prefetch="true" data-role="button" data-theme="d" id="list" data-icon="custom">Brought to you by 3horn.us</a>
+
+	</div>	
+	
+
+
+	
+
+
+	</body>
+</html>
