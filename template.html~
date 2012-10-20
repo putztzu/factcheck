@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width" />
 		<title>Pants on Fire Fact Check</title>
-
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
 		
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<!-- <link rel="stylesheet" href="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.css" /> -->
@@ -45,29 +45,20 @@
 						<li><a href="theMRC.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Media Rsrch Ctr</a></li>
 					</ul>
 				</div>
-		  	
+		  	</div>
 	      </div>
 	</div>
 
 	<div data-role="content" >
-
-		<h3>The NW app</h3>
-		<br>
-		 Stuff about 3horn.us
+	
+	This is some text
+	
+	
 	</div>
 
-	<!--
 
-	<div data-role="content" data-theme="d">			
-		<div class="content-primary">
-		    <div class="api-div" id="api-intro">
-		        <h2>About Us</h2>
-				<p>This is just a quick demo of a minimal page.</p>	
-			</div>		    
-		</div>
-	</div>
 
-	-->
+
 
 	<div data-role="footer" data-id="footer1" data-position="fixed">
 	      <a href="about.html" data-transition="none" data-prefetch="true" data-role="button" data-theme="d" id="list" data-icon="custom">Brought to you by 3horn.us</a>

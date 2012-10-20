@@ -45,30 +45,41 @@
 						<li><a href="theMRC.html" data-transition="none" data-prefetch="true" data-theme="d" id="list" data-icon="custom">Media Rsrch Ctr</a></li>
 					</ul>
 				</div>
-		  	
+		  	</div>
 	      </div>
 	</div>
 
-	<div data-role="content" >
-
-		<h3>The NW app</h3>
-		<br>
-		 Stuff about 3horn.us
-	</div>
-
-	<!--
-
-	<div data-role="content" data-theme="d">			
-		<div class="content-primary">
-		    <div class="api-div" id="api-intro">
-		        <h2>About Us</h2>
-				<p>This is just a quick demo of a minimal page.</p>	
-			</div>		    
-		</div>
-	</div>
-
-	-->
-
+	<div data-role="content" >	
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('politifacts').start();
+		</script>
+	</div><!-- /content -->
+	
 	<div data-role="footer" data-id="footer1" data-position="fixed">
 	      <a href="about.html" data-transition="none" data-prefetch="true" data-role="button" data-theme="d" id="list" data-icon="custom">Brought to you by 3horn.us</a>
 
