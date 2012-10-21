@@ -1,0 +1,319 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Pants on Fire</title> 
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	
+	<!--
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	-->
+	
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>	
+	
+</head> 
+
+	
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Pants on Fire!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<center><h2>Liar, Liar! Pants on Fire!</h2>
+		<img src="assets/img/hp.jpeg" /></center>
+		<p><
+		This version is <bold>Beta</bold>. The final version will be deployed well in advance of the actual Debate no later than 2hrs before the debate actually begins. Should run on any computing device including phones, tablets and PCs using any web browser except maybe IE6 and earlier.
+		</p>
+		<p>
+		Until then, if you have any suggestion or comment, you can message them to tonysu@su-networking.com
+		</p>
+		<p>
+		This is a collection of realtime fact checkers who comment during the Presidential Debates, and the official feeds from the Omama and Romney campaigns as well.	
+		</p>
+		<h2>The Fact Checkers</h2>
+		<p><a href="#two" data-role="button">Factcheck</a></p>			
+		<p><a href="#three" data-role="button">Politifact</a></p>
+		<p><a href="#four" data-role="button">Media Research Center</a></p>		
+		<h2>Spin City</h2>
+		<p><a href="#five" data-role="button">Obama Campaign</a></p>
+		<p><a href="#six" data-role="button">Romney Campaign</a></p>		
+		
+		
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<a href="#one" data-direction="reverse" data-theme="b"> Back</a>
+		<h1>Two</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('factcheckdotorg').start();
+		</script>
+		</p>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<!-- Start of third page: #three -->
+<div data-role="page" id="three" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<a href="#one" data-direction="reverse" data-theme="b"> Back</a>
+		<h1>Two</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('politifact').start();
+		</script>
+		</p>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page three -->
+
+<!-- Start of fourth page: #four -->
+<div data-role="page" id="four" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<a href="#one" data-direction="reverse" data-theme="b"> Back</a>
+		<h1>four</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('themrc').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page four -->
+
+
+<!-- Start of fifth page: #five -->
+<div data-role="page" id="five" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<a href="#one" data-direction="reverse" data-theme="b"> Back</a>
+		<h1>five</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>five</h2>
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('ObamaCamp2012').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page five -->
+
+<!-- Start of sixth page: #six -->
+<div data-role="page" id="six" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<a href="#one" data-direction="reverse" data-theme="b"> Back</a>
+		<h1>six</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>six</h2>
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('mittromney').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page six -->
+
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+           	<div class="scroll">
+		      This application is provided free of charge, but it does cost time and effort to create. If you like this application, feel free to tell others about it, but if you'd also like to have a similar app for your business or cause, it all starts here... <p><center><a href="mailto:dealsave@email.com" data-role="button" data-inline="true" rel="external">Deal Saver!</a></center><p>Email 3horn a request with the above button and you'll get deeply discounted savings for everything from starting your brand new online presence to marketing campaigns to mobile apps that keep your fans up to date on your latest deals, events and general news! 
+                </div>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html> 
