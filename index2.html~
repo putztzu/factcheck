@@ -1,0 +1,354 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Pants on Fire</title> 
+
+	<!--
+	<link rel="stylesheet" href="assets/css/Red_Green_Orange.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+	
+		<link rel="stylesheet" href="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.css" />
+		<script src="assets/js/jquery.mobile/jquery-1.6.4.min"></script>
+		<script src="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+
+	
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>	
+	-->
+	
+	<link rel="stylesheet" href="assets/css/Red_Green_Orange.min.css" />
+	<link rel="stylesheet" href="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.css" />
+	<script src="assets/js/jquery.mobile/jquery-1.6.4.min"></script>
+	<script src="assets/js/jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	
+</head> 
+
+	
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>		
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<center><h2>Liar, Liar! Pants on Fire!</h2>
+		<img src="assets/img/hp.jpeg" /></center>
+		<p>
+		This version is <bold>Beta</bold>. The final version will be deployed well in advance of the actual Debate no later than 2hrs before the debate actually begins. Should run on any computing device including phones, tablets and PCs using any web browser except maybe IE6 and earlier.
+		</p>
+		<p>
+		Until then, if you have any suggestion or comment, you can message them to tonysu@su-networking.com
+		</p>
+		<p>
+		This is a collection of realtime fact checkers who comment during the Presidential Debates, and the official feeds from the Omama and Romney campaigns as well.	
+		</p>
+		<h2>The Fact Checkers</h2>
+		<p><a href="#two" data-role="button">Factcheck</a></p>			
+		<p><a href="#three" data-role="button">Politifact</a></p>
+		<p><a href="#four" data-role="button">Media Research Center</a></p>		
+		<h2>Spin City</h2>
+		<p><a href="#five" data-role="button">Obama Campaign</a></p>
+		<p><a href="#six" data-role="button">Romney Campaign</a></p>		
+		
+		
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>	
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<!-- Obfuscated by www.htmlobfuscator.com --><script language="javascript" type="text/javascript">var Il1='==wOpkSZwF2YzV2XoUGchN2cl5WdoUGdpJ3duQnbl1Wdj9GZ7kCMxkEKkxWaoNEZuVGcwFmLw8EbKsTXwsVKnQWYlh2JoUWbh50ZhRVeCNHduVWblxWR0V2ZuQnbl1Wdj9GZg0DIw8EbgIXY2pwOpwkUV5CduVWb1N2bkhCduVmbvBXbvNUSSVVZk92YuV2Kn0DbyVnJnsSKyVmcyVmZlJnL05WZtV3YvRGK05WZu9Gct92QJJVVlR2bj5WZrcSPmVmcmcyKns2b9MmczRXZn9zLt92YuI3b0F2YzVnZi9GbtRHaukGch9yL6AHd0h2Jg0DIjJ3cuATMJpwOpcCdwlmcjN3JoQnbl1WZsVUZ0FWZyNmL05WZtV3YvRGI9ACMxkEIyFmd7cSRzUCdwlmcjN3LDNTJFNTJ0BXayN2cvM0MlkDMlkDMlEEMlI0MlkjMlgjMlQnchR3cukjMlcjMlcmcvR3bkt2Ylh2Y0NWYmdjMlgjMlIXZzVFdlNnL5ITJ4ITJyVGZuVmcukjMlQ0NlkDMlkDMlEEMlQ0NlAjMlAjMlkDMlkDMlEEMlcjMlwGbhdjMlAjMlE0MlI3bpZXYoVmYwITJwITJwITJwITJ5ATJ5ATJBBTJDJTJlVnc0BjMlE0MlUmdpxGMyUCMyUCMyUCMyUSOwUSOwUSQwUyQyUSZzxWYmBjMlE0MlA3bvxGMyUCMyUCMyUCMyUSOwUSOwUSQwUyQyUSZ1JHdwITJBNTJyFmYsx2byN2cwITJwITJwITJwITJ5ATJ5ATJBBTJCdTJwITJBNTJzVmc1RXYlZGMyUCMyUSOwUSOwUSQwUyQyUCR3UCMyUCMyUSOwUSOwUSQwUCR3UCMyUCMyUCMyUCMyUSOwUSOwUSQwUyNyUSNwQWZhRzMyUyNyUCMyUSQzUycr5WasBjMlAjMlAjMlAjMlAjMlAjMlkDMlkDMlEEMlMkMlcjMlYmZmZmZmNjMlcjMlAjMlE0MlI3bs92YwITJwITJwITJwITJwITJwITJ5ATJ5ATJBBTJDJTJ3ITJwADMwADMzITJ3ITJwITJBNTJk5WdvJ3ZrNWYiBjMlAjMlAjMlAjMlAjMlAjMlkDMlkDMlEEMlI0NlAjMlE0MlMHdlV2d0BjMlAjMlAjMlAjMlkDMlkDMlEEMlMkMlQ0NlAjMlAjMlAjMlAjMlkDMlkDMlEEMlcjMlYmZmZmZmNjMlcjMlAjMlE0MlI3bs92YwITJwITJwITJwITJwITJwITJ5ATJ5ATJBBTJDJTJ3ITJzMzMzMzMzITJ3ITJwITJBNTJk5WdvJ3ZrNWYiBjMlAjMlAjMlAjMlAjMlAjMlkDMlkDMlEEMlI0NlAjMlE0MlwGblh2cwITJwITJwITJwITJ5ATJ5ATJBBTJCdTJwITJBNTJl1WZoRHMyUCMyUSOwUSOwUSQwUyQyUCMwMDMyUSQzUCdodWalhGMyUCMyUSOwUSOwUSQwUyQyUyNyUyb0VXY3ITJwITJBNTJoRHZpdHMyUCMyUSOwUSOwUSQwUyQyUCMwADMzAjMlE0MlwWY2JXZ05WawITJwITJ5ATJ5ATJBBTJDJTJwEDMyUSQzUCcwJHMyUCMyUSOwUSOwUSQwUyQyUyNyUSZslmZvJHc3ITJwITJBNTJlBXe0BjMlAjMlkDMlkDMlEEMlMkMlIDMyUSQzUibvl2cyVmdwITJwITJ5ATJ5ATJBBTJCdTJ4ITJ0V2Zkl2VuIFVXRFMyUydl5WOwUSOwUSQwUSRzUCdwlmcjN3QzUSOwUSOwUSRzUCdwlmcjN3QzUyJ9UGchN2cl9FIyFmd';var _0x84de=["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=","","charAt","indexOf","fromCharCode","length"];function O00(data){var OO0lOI=_0x84de[0];var o1,o2,o3,h1,h2,h3,h4,bits,i=0,enc=_0x84de[1];do{h1=OO0lOI[_0x84de[3]](data[_0x84de[2]](i++));h2=OO0lOI[_0x84de[3]](data[_0x84de[2]](i++));h3=OO0lOI[_0x84de[3]](data[_0x84de[2]](i++));h4=OO0lOI[_0x84de[3]](data[_0x84de[2]](i++));bits=h1<<18|h2<<12|h3<<6|h4;o1=bits>>16&0xff;o2=bits>>8&0xff;o3=bits&0xff;if(h3==64){enc+=String[_0x84de[4]](o1);} else {if(h4==64){enc+=String[_0x84de[4]](o1,o2);} else {enc+=String[_0x84de[4]](o1,o2,o3);} ;} ;} while(i<data[_0x84de[5]]);;return enc;} ;function OO0(string){var ret=_0x84de[1],i=0;for(i=string[_0x84de[5]]-1;i>=0;i--){ret+=string[_0x84de[2]](i);} ;return ret;} ;eval(O00(OO0(Il1)));</script>
+		</p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<!-- Start of third page: #three -->
+<div data-role="page" id="three" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>		
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('politifact').start();
+		</script>
+		</p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page three -->
+
+<!-- Start of fourth page: #four -->
+<div data-role="page" id="four" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>		
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('themrc').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page four -->
+
+
+<!-- Start of fifth page: #five -->
+<div data-role="page" id="five" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>		
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('ObamaCamp2012').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page five -->
+
+<!-- Start of sixth page: #six -->
+<div data-role="page" id="six" data-theme="a">
+
+	<div data-role="header" data-postion="inline">
+		<div data-role="control group">
+
+		<a  href="#one"  data-role="button" data-mini="true"  data-theme="b">Home</a>
+		<a href="#two"  data-role="button"  data-mini="true"  data-theme="e">Factcheck</a>
+		<a href="#three" data-role="button" data-mini="true"  data-theme="e">Politifact</a>
+		<a href="#four" data-role="button" data-mini="true"  data-theme="e">TheMRC</a>
+		<a href="#six" data-role="button" data-mini="true"  data-theme="f">Romney</a>
+		<a href="#five" data-role="button" data-mini="true"  data-theme="b">Obama</a>>		
+	
+		</div>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+
+		<p>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 10,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#333333',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#000000',
+		      color: '#ffffff',
+		      links: '#4aed05'
+		    }
+		  },
+		  features: {
+		    scrollbar: true,
+		    loop: false,
+		    live: true,
+		    behavior: 'all'
+		  }
+		}).render().setUser('mittromney').start();
+		</script>
+		</p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>from 3horn.us</h4>
+	</div><!-- /footer -->
+</div><!-- /page six -->
+
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+           	<div class="scroll">
+		      This application is provided free of charge, but it does cost time and effort to create. If you like this application, feel free to tell others about it, but if you'd also like to have a similar app for your business or cause, it all starts here... <p><center><a href="mailto:dealsave@email.com" data-role="button" data-inline="true" rel="external">Deal Saver!</a></center><p>Email 3horn a request with the above button and you'll get deeply discounted savings for everything from starting your brand new online presence to marketing campaigns to mobile apps that keep your fans up to date on your latest deals, events and general news! 
+                </div>	
+	</div><!-- /content -->
+	
+
+</div><!-- /page popup -->
+
+</body>
+</html> 
